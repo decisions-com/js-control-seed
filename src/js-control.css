@@ -1,0 +1,25 @@
+/* Example CSS for our example control */
+
+.my-label-wrapper {
+  padding: 4px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  background: #fff;
+}
+
+.my-label-text {
+  color: #333;
+  font-size: 15px;
+}
+
+.my-input {
+  font-size: 18px;
+  color: black;
+  background: #ddd;
+  border-radius: 3px;
+  padding: 4px 6px;
+  border: solid 1px #ccc;
+  /* border: solid 1px #999; */
+}

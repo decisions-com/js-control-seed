@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.testbed {
+  background: #eee;
+  display: flex;
+  justify-content: stretch;
+  height: 100%;
+  
+}
+
+.testbed__container {
+  padding: 1rem;
+  flex: 1;
+}
+
+.testbed__sidebar {
+  padding: 1rem;
+  background: #ddd;
+  width: 400px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.testbed__value {
+  background: white;
+  padding: 0.5rem;
+  flex: 1;
+  overflow: auto;
+}

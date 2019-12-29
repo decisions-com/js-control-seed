@@ -1,0 +1,28 @@
+{
+  "name": "@decisions/js-control-seed-fusebox",
+  "version": "0.0.0",
+  "description": "Starter kit for authoring Decisions JavaScript Controls",
+  "main": "index.js",
+  "scripts": {
+    "start-ts": "node fuse.js start-ts",
+    "start-js": "node fuse.js start-js",
+    "build-ts": "node fuse.js dist-ts",
+    "build-js": "node fuse.js dist-js"
+  },
+  "author": "sam@decisions.com",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "fuse-box": "^3.7.1",
+    "less": "^3.10.3",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "terser": "^4.4.3",
+    "typescript": "^3.7.4",
+    "uglify-js": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.1",
+    "jquery": "^3.3.1"
+  }
+}
