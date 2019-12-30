@@ -1,6 +1,4 @@
 import './js-control.css';
-import './Foo.scss';
-import './Bar.less';
 
 /**
  * This JSDoc type def represents the data coming into your control from Decisions,
