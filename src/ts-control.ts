@@ -66,7 +66,7 @@ export class JsControlName {
    *
    * In this example, we are creating the HTML parts using vanilla JS,
    * but you could embed another library into your control,
-   * or use a [script control](todo)
+   * or use a [script control](https://documentation.decisions.com/docs/javascript-control-using-library)
    * @param {JQuery<HTMLElement>} host jquery element to append custom content into
    */
   initialize(host: JQuery<HTMLElement>) {
