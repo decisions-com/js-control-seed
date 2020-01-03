@@ -1,5 +1,5 @@
 import './testbed.css';
-import { initializeTestBed } from './testbed';
+import { initializeTestBed } from './testbed.ts';
 import { JsControlName } from './js-control';
 import { value } from './value';
 

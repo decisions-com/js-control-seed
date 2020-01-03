@@ -1,11 +1,11 @@
 {
-  "name": "@decisions/js-control-seed-fusebox",
+  "name": "@decisions/js-control-seed",
   "version": "0.0.0",
   "description": "Starter kit for authoring Decisions JavaScript Controls",
   "main": "index.js",
   "scripts": {
     "start-ts": "node fuse.js start-ts",
-    "start-js": "node fuse.js start-js",
+    "start-js": "webpack-dev-server --open",
     "build-ts": "node fuse.js dist-ts",
     "build-js": "node fuse.js dist-js"
   },
@@ -13,16 +13,32 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "fuse-box": "^3.7.1",
-    "less": "^3.10.3",
-    "node-sass": "^4.13.0",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "autoprefixer": "^9.6.5",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-inline-css-webpack-plugin": "^1.8.0",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
-    "terser": "^4.4.3",
-    "typescript": "^3.7.4",
-    "uglify-js": "^3.7.2"
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.1",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
     "@types/jquery": "^3.3.1",
-    "jquery": "^3.3.1"
-  }
+    "jquery": "^3.3.1",
+    "less-loader": "^5.0.0",
+    "moment": "^2.24.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.7.4"
+  },
+  "browserslist": "cover 99.5%"
 }

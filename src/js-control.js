@@ -28,7 +28,6 @@ if (process.env.NODE_ENV === 'development') {
  * @typedef {DecisionsJsControl} JsControlName
  */
 export class JsControlName {
-
   /** @type {HTMLElement} parent element, within which to render your control. */
   parentElement;
 
@@ -43,7 +42,7 @@ export class JsControlName {
 
   /** @type {HTMLInputElement} */
   input;
-  
+
   constructor() {
     this.labelWrapper = document.createElement('label');
     this.labelWrapper.className = 'my-label-wrapper';
@@ -57,10 +56,10 @@ export class JsControlName {
 
   /**
    * Do any work that needs to be done once for your control.
-   * 
+   *
    * In this example, we are creating the HTML parts using vanilla JS,
    * but you could embed another library into your control,
-   * or use a [script control](https://documentation.decisions.com/docs/javascript-control-using-library) 
+   * or use a [script control](https://documentation.decisions.com/docs/javascript-control-using-library)
    * @param {JQuery<HTMLElement>} host jquery element to append custom content into
    */
   initialize(host) {
@@ -76,7 +75,7 @@ export class JsControlName {
   setValue(values) {
     // store any data your control needs to store
     this.labelText.innerText = values.name;
-    this.input.innerText = values.value;
+    this.input.value = values.value;
   }
 
   /**
@@ -85,14 +84,14 @@ export class JsControlName {
    * @param {number} width in pixels
    */
   resize(height, width) {
-    console.log("height", height, "width", width);
+    console.log('height', height, 'width', width);
   }
 
   /**
    * Return values if control needs to output data.
    */
   getValue() {
-    return this.value;
+    return { value: this.input.value };
   }
 }
 
