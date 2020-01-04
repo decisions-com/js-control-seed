@@ -1,6 +1,14 @@
 module.exports = {
-  // this should match the JS Control class or functional constructor name.
-  JS_CONTROL_NAME: 'JsControlName', 
+  useTypeScript: false,
+  JS_CONTROL_FILE_NAME: 'js-control.js', // for JavaScript 
+  // JS_CONTROL_FILE_NAME: 'ts-control.ts', // for TypeScript 
+  /**
+   * this should match the JS Control class or functional constructor name.
+   */
+  JS_CONTROL_NAME: 'JsControlName',
+  /**
+   * name of file to resolve, in case you rename it
+   */
   externals: {
     // these are libraries that are available at Runtime from Decisions:
     jquery: 'jQuery',

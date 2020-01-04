@@ -1,5 +1,4 @@
 import './js-control.css';
-
 /**
  * This JSDoc type def represents the data coming into your control from Decisions,
  * when `setValue` is called.
@@ -45,6 +44,7 @@ export class JsControlName {
 
   constructor() {
     this.labelWrapper = document.createElement('label');
+    this.labelWrapper.style.border = "dashed purple 1px";
     this.labelWrapper.className = 'my-label-wrapper';
     this.labelText = document.createElement('span');
     this.labelText.className = 'my-label-text';

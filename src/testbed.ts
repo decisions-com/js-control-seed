@@ -1,4 +1,5 @@
 import './testbed.css';
+import $ from 'jquery';
 
 interface DecisionsJsControl {
   initialize(host: JQuery, component: any): void;
@@ -57,5 +58,5 @@ export function initializeTestBed(control: DecisionsJsControl) {
   // track instance, so FuseBox HMR doesn't re-bootstrap every time.
   (window as any).controlInstance = control;
   
-  return ([container] as any) as JQuery<HTMLElement>;
+  return $([container]);
 }

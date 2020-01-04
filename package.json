@@ -4,10 +4,10 @@
   "description": "Starter kit for authoring Decisions JavaScript Controls",
   "main": "index.js",
   "scripts": {
-    "start-ts": "node fuse.js start-ts",
-    "start-js": "webpack-dev-server --open",
-    "build-ts": "node fuse.js dist-ts",
-    "build-js": "node fuse.js dist-js"
+    "start": "webpack-dev-server --open",
+    "build": "webpack --env.production",
+    "build-maps": "webpack --env.production --env.sourceMaps",
+    "tsc": "tsc -p tsconfig.json"
   },
   "author": "sam@decisions.com",
   "repository": "https://github.com/decisions-com/js-control-seed",
@@ -15,13 +15,14 @@
   "private": false,
   "devDependencies": {
     "autoprefixer": "^9.6.5",
-    "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "html-inline-css-webpack-plugin": "^1.8.0",
-    "html-webpack-plugin": "^4.0.0-beta.8",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
