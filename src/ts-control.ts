@@ -1,5 +1,4 @@
 import './js-control.css';
-
 interface YourInputs {
   name: string;
   value: string;
@@ -17,7 +16,6 @@ interface DecisionsJsControl {
 }
 
 declare var process: any;
-console.log('process.env.NODE_ENV', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   // place things here that you need to load or do only in dev environment
   // this code will be removed in production.
@@ -70,7 +68,6 @@ export class JsControlName {
    * @param {JQuery<HTMLElement>} host jquery element to append custom content into
    */
   initialize(host: JQuery<HTMLElement>) {
-    console.log('Initialize JS Control');
     this.host = host;
     this.parentElement = host[0];
     this.parentElement.appendChild(this.labelWrapper);
@@ -81,7 +78,6 @@ export class JsControlName {
    * define for your control on the Decisions side.
    */
   setValue(values: YourInputs) {
-    console.log('setValue', values);
     // store any data your control needs to store
     this.labelText.innerText = values.name;
     this.input.value = values.value;
